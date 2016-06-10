@@ -178,7 +178,7 @@ var configStringify = function(config) {
     str = str.replace('"iframe": "' + config.iframe + '"', 'iframe: ' + config.iframe);
   }
 
-  return 'Meteor.startup(function() {\n\tPush.Configure(' + str + ');\n});';
+  return 'window.pushConfiguration = ' + str + ';';
 };
 
 
