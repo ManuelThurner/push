@@ -178,7 +178,7 @@ var configStringify = function(config) {
     str = str.replace('"iframe": "' + config.iframe + '"', 'iframe: ' + config.iframe);
   }
 
-  return 'window.pushConfiguration = ' + str + ';';
+  return 'Push.pushConfiguration = ' + str + ';';
 };
 
 
